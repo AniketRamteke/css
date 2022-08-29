@@ -1,11 +1,40 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: sans-serif;
   color: #444;
+  border-top: 10px solid #1098ad;
+  margin: 0;
+}
+
+.main-header {
+  background-color: #dad6d6;
+  padding: 20px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #dfdbdb;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
 }
 
 h1,
@@ -22,10 +51,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -37,15 +69,27 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5; /* default id 100% of the font height */
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
-/* to select footer and p elements at the same time */
-footer p {
-  font-size: 16px;
+/* for selecting last child from li list use psuedo class*/
+li:last-child {
+  margin-bottom: 0;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
 }
 
 #copyright {
@@ -57,22 +101,17 @@ footer p {
   font-weight: bold;
 }
 
+/* to select footer and p elements at the same time */
+footer p {
+  font-size: 16px;
+}
+
 /* ul {
   list-style: none;
 } */
 
 .related {
   list-style: none;
-}
-
-.main-header {
-  background-color: #dad6d6;
-}
-
-aside {
-  background-color: #dfdbdb;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 li:first-child {
@@ -84,7 +123,37 @@ li:last-child {
 }
 
 li:nth-child(odd) {
+  /* color: red; */
+}
+
+article p:first-child {
   color: red;
+}
+
+/* This sequence for defining anchor tag properties matter L->V->H->A */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+.post-img {
+  width: 100%; /* percentage of the parent container */
+  height: auto;
 }
 
 #copyright {
