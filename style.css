@@ -10,6 +10,11 @@ body {
   margin: 0;
 }
 
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
 .main-header {
   background-color: #dad6d6;
   padding: 20px;
