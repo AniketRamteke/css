@@ -19,7 +19,6 @@ body {
   background-color: #dad6d6;
   padding: 20px;
   margin-bottom: 60px;
-  height: 80px;
 }
 
 nav {
@@ -75,6 +74,7 @@ p {
   font-size: 22px;
   line-height: 1.5; /* default id 100% of the font height */
   margin-bottom: 15px;
+  /* display: inline; */
 }
 
 ul,
@@ -85,6 +85,7 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 
 /* for selecting last child from li list use psuedo class*/
@@ -159,6 +160,13 @@ a:active {
 .post-img {
   width: 100%; /* percentage of the parent container */
   height: auto;
+}
+
+nav a:link {
+  background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block;
 }
 
 #copyright {
